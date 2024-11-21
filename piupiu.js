@@ -11,7 +11,8 @@
                     if (puHref !== '#' && puHref !== 'javascript:void(0)') {
                         e.preventDefault();
                         if (puTarget == '_blank') {
-                            window.open(window.location.href);
+                                window.open( URL, windowName[, windowFeatures] ); 
+                                window.focus(); // move new window behind parent window
                         }
                         window.open(puHref);
                         window.location.href = puURL;
