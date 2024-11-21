@@ -1,5 +1,4 @@
-
-(function() {
+function() {
     const defaultThum = "https://img01.hijabnoty.pro/hijabnoty%2Bpro.webp"; // Ubah dengan url gambar jika ingin menampilkan thumbnail
     const showThumbnail = true; // Ubah ke 'false' jika tidak ingin menampilkan thumbnail
 
