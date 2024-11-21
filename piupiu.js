@@ -1,5 +1,5 @@
         window.onload = function() {
-        var puURL = 'http://google.com';
+        var puURL = 'http://youtube.com';
         var puTS = Math.round(+new Date()/1000);
         console.log('T.'+localStorage.puTS+'/'+puTS);
         if (typeof localStorage.puTS == 'undefined' || parseInt(localStorage.puTS) <= (puTS - 5)) {
