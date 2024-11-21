@@ -5,14 +5,6 @@
     <meta charset="UTF-8" />
     <title>Test Video Player</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<script>/*<![CDATA[*/
-<!-- Multi Tab Server Iframe Video by Kauruka.com -->
-(function() {
-    const defaultThum = "https://img01.hijabnoty.pro/hijabnoty%2Bpro.webp"; // Ubah dengan url gambar jika ingin menampilkan thumbnail
-    const showThumbnail = true; // Ubah ke 'false' jika tidak ingin menampilkan thumbnail
-
-    const videoContainer=document.querySelector(".vi-on"),changeButtons=document.querySelectorAll(".change-video");function initThumbnail(){if(showThumbnail){const e=document.createElement("div");e.classList.add("play"),e.innerHTML="<span></span>";const t=document.createElement("img");t.classList.add("thumb-v");const n=videoContainer.getAttribute("data-thum"),i=n||defaultThum;t.src=i,t.alt="Video Thumbnail",t.onerror=function(){t.remove();const e=document.createElement("p");e.textContent="Thumbnail tidak dapat dimuat.",videoContainer.appendChild(e)},videoContainer.appendChild(e),videoContainer.appendChild(t),e.addEventListener("click",function(){const e=document.querySelector(".c-aktif").getAttribute("data-embed");videoContainer.innerHTML=`<iframe src="${e}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>`})}else{const e=document.querySelector(".c-aktif").getAttribute("data-embed");videoContainer.innerHTML=`<iframe src="${e}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>`}}function initEmbedButtons(){changeButtons.forEach(function(e){e.addEventListener("click",function(){changeButtons.forEach(t=>t.classList.remove("c-aktif")),e.classList.add("c-aktif");const t=e.getAttribute("data-embed");videoContainer.innerHTML=`<iframe src="${t}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>`})})}initThumbnail(),initEmbedButtons();
-/*]]>*/</script>
 <style>
 #kaurukavideo{margin:auto;overflow:hidden;box-shadow:0 2px 6px -1px rgb(7 10 25 / 5%),0 6px 12px -6px rgb(7 10 25 / 10%);border-radius:8px}.vi-on{position:relative;width:100%;height:0;padding-bottom:56.25%;background-color:#000;cursor:pointer;overflow:hidden}#kaurukavideo .vi-on p{color:#fff;display:flex;justify-content:center}.vi-on iframe,.vi-on img,.play{position:absolute}.play{top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;background-color:rgba(0,0,0,.7);border-radius:50%;display:flex;justify-content:center;align-items:center;z-index:1;transition:.4s cubic-bezier(.25,1,.30,1)}.play:hover{transform:translate(-50%,-50%) scale(1.15);transition:.25s cubic-bezier(.25,1,.30,1)}.play span{border-style:solid;border-width:15px 0 15px 26.7px;border-color:transparent transparent transparent #fff;margin-left:5px}.vi-on img{width:calc(100% + 5px);border:0;border-radius:0;opacity:.95;height:100%;object-fit:cover}.vi-on iframe{bottom:0;right:0;width:100%;height:100%}.servideo{display:flex;flex-wrap:wrap;gap:10px;padding:12px;font-size:13px;background-color:#1a1a1a}.servideo .change-video{background-color:#222;color:#eee;border-radius:4px;padding:4px 10px;cursor:pointer;align-items:center;display:flex;transition:.4s}.servideo .change-video.c-aktif,.servideo .change-video:hover{background:rgb(99 77 235);transition:.4s}.servideo .change-video:before{content:"";opacity:0}.servideo .change-video.c-aktif:before{content:"";margin-right:5px;margin-left:-5px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3Eplay-circle%3C/title%3E%3Cpath d='M10,16.5V7.5L16,12M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' fill='%23fff' /%3E%3C/svg%3E");width:18px;height:18px;display:inline-block;transition:.3s;opacity:1}
 </style>	
@@ -28,4 +20,5 @@
     <span class="change-video" data-embed="https://filemoon.eu/e/lh6ye1bjpnbv">4</span>
   </div>
 </div>
+<script type="text/javascript" src="https://doodflix.github.io/afaantuh/main/tong.js"></script>
 </body>
